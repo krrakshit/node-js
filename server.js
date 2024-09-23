@@ -8,6 +8,10 @@ app.get('/',(req,res)=>{
     return res.send("Hello from Home page")
 })
 
+app.get("/test",(req,res)=>{
+  return res.end("<h1>Hey from server</h1>")
+})
+
 app.get("/about",(req,res)=>{
     return res.send("Hello from About page"+req.query.name + "you are" + req.query.age
         
